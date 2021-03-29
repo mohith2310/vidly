@@ -136,7 +136,7 @@ class Movies extends Component {
             onPageChange={this.pageChangeHandler}
             curPage={this.state.curPage}
           />
-          {user && (
+          {user && user.isAdmin && (
             <Link
               className="btn btn-primary mr-auto"
               style={{ marginLeft: "650px" }}
